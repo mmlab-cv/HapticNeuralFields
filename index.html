@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>Haptic Neural Fields: Bringing Tactile Interactions to 3D Rendered Scenes - Paper ID 44046</title>
+
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Haptic Neural Fields: Bringing Tactile Interactions to 3D Rendered Scenes",
+    "description": "We address the problem of making 3D scenes interactive by asking: what would objects feel like if touched in a virtual environment? State-of-the-art 3D rendering methods provide compelling visual realism, but they fall short in modeling physical interactions, such as haptic feedback. We propose a framework that learns the correspondence between user actions and tactile responses, enabling the generation of touch-based signals directly from simulated interactions in 3D scenes. Our approach leverages a neural field representation conditioned on geometry and action to synthesize material-specific tactile signals. Experiments show that the generated signals reliably convey material properties and interaction dynamics. This paves the way toward interactive, touch-aware virtual environments with realistic haptic feedback.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Paper ID 44046",
+      }
+    ],
+    "datePublished": "2025-11-21",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CVPR2026"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">Haptic Neural Fields: Bringing Tactile Interactions to 3D Rendered Scenes</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <div>Paper ID 44046</div></span>
+                  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Video carousel: two videos, same dimensions as before, play sequentially (one after the other finishes) -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Our demo</h2>
+
+    <div id="video-carousel" style="display:flex; align-items:center; justify-content:center; gap:1rem;">
+    <div class="carousel-frame" style="width:100%; max-width:960px; min-width:240px;">
+      <video id="carousel-video-0" playsinline muted preload="metadata" style="width:100%; height:auto; display:block;">
+      <source src="static/videos/scene1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="carousel-frame" style="width:100%; max-width:960px; min-width:240px; display:none;">
+      <video id="carousel-video-1" playsinline muted preload="metadata" style="width:100%; height:auto; display:block;">
+      <source src="static/videos/scene2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    </div>
+
+    <div style="text-align:center; margin-top:0.5rem;">
+    <button id="carousel-prev" class="button is-small">Prev</button>
+    <button id="carousel-next" class="button is-small">Next</button>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const frames = Array.from(document.querySelectorAll('#video-carousel .carousel-frame'));
+  const videos = frames.map(f => f.querySelector('video'));
+  let idx = 0;
+
+  function show(i) {
+  frames.forEach((f, j) => f.style.display = (j === i) ? 'block' : 'none');
+  videos.forEach((v, j) => {
+    if (j === i) {
+    v.currentTime = 0;
+    v.muted = true; // keep muted so autoplay works on most browsers
+    v.play().catch(() => {}); // ignore play errors due to autoplay policies
+    } else {
+    v.pause();
+    v.currentTime = 0;
+    }
+  });
+  }
+
+  // When one video ends, advance to the next and play it
+  videos.forEach(v => v.addEventListener('ended', () => {
+  idx = (idx + 1) % videos.length;
+  show(idx);
+  }));
+
+  document.getElementById('carousel-prev').addEventListener('click', () => {
+  idx = (idx - 1 + videos.length) % videos.length;
+  show(idx);
+  });
+
+  document.getElementById('carousel-next').addEventListener('click', () => {
+  idx = (idx + 1) % videos.length;
+  show(idx);
+  });
+
+  // start playback with first video
+  show(0);
+});
+</script>
+
+
+<!-- Teaser image-->>
+<section class="hero teaser">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3"> What would objects feel like if touched in a virtual environment?</h2>
+    <div class="hero-body">
+      <img src="static/images/teaser-3.png" alt="Teaser image" loading="lazy"/>
+      <h2 class="subtitle has-text-justified">
+        <em>How does an object feel when stroked with a hand?</em> We propose a method that augments 3D scenes with object-specific tactile feedback. We train a neural field to model haptic responses conditioned on a surface material and an action. By integrating material properties with the underlying 3D geometry, the learned fields enable interactive tactile exploration: at test time, a user can input an arbitrary hand action, and the model estimates the resulting tactile signal. Here we show examples of hand interactions and the corresponding generated haptic feedback.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image-->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We address the problem of making 3D scenes interactive by asking: what would objects feel like if touched in a virtual environment? State-of-the-art 3D rendering methods provide compelling visual realism, but they fall short in modeling physical interactions, such as haptic feedback. We propose a framework that learns the correspondence between user actions and tactile responses, enabling the generation of touch-based signals directly from simulated interactions in 3D scenes. Our approach leverages a neural field representation conditioned on geometry and action to synthesize material-specific tactile signals. Experiments show that the generated signals reliably convey material properties and interaction dynamics. This paves the way toward interactive, touch-aware virtual environments with realistic haptic feedback.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <div class="image-wrapper">
+            <div class="image-box" style="height:360px; overflow:hidden; display:flex; align-items:center; justify-content:center; position:relative; z-index:1;">
+              <img src="static/images/architecture.png" alt="First image" loading="lazy" style="max-height:100%; width:auto; object-fit:cover; display:block; position:relative; z-index:1;">
+            </div>
+
+            <!-- Caption placed outside image-box and above images using z-index -->
+            <h2 class="subtitle has-text-justified" style="margin-top:0.75rem; position:relative; z-index:2; clear:both;">
+              <strong>Pipeline overview.</strong> From a 3D scene (NeRF/3DGS) we render an RGB view, use a conditional diffusion model to obtain a co-registered haptic map I, and encode it into a material token m = E(I). An action description is encoded as u(t). The Haptic Neural Fields (HNF) consumes (m, u(t)) and outputs a vibrotactile acceleration signal a(t).
+            </h2>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <div class="image-box" style="height:360px; overflow:hidden; display:flex; align-items:center; justify-content:center; position:relative; z-index:1;">
+              <img src="static/images/HNF-6.png" alt="Second image" loading="lazy" style="max-height:100%; width:auto; object-fit:cover; display:block; position:relative; z-index:1;">
+            </div>
+
+            <!-- Caption placed outside image-box and above images using z-index -->
+            <h2 class="subtitle has-text-justified" style="margin-top:0.75rem; position:relative; z-index:2; clear:both;">
+              <strong>Overview of the Haptic Neural Field (HNF) and temporal rendering.</strong> (a) Given a contact trajectory on a material surface, we sample directions, speeds, and normal forces over time. (b) For each sample, an MLP conditioned on the haptic map and actions outputs a local emitted acceleration contribution and a nonnegative haptic density. (c) A transmittance-based temporal renderer composites these values over a short causal window to produce the vibrotactile acceleration signal. (d) The HNF is trained end to end with a frequency-domain loss that minimizes the residual between the synthesized and ground-truth DFT magnitudes.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+<!-- Comparison image -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop">
+        <h2 class="title">Do directions influence haptic stimuli generation?<br>With Haptic Neural Fields they do</h2>
+          <div class="hero-body">
+            <img src="static/images/ablationdiginerf-2.png" alt="Comparison image" loading="lazy"/>
+            <h2 class="subtitle has-text-justified" style="margin-top:0.75rem; position:relative; z-index:2; clear:both;">
+              <strong>Direction-dependent haptics.</strong> Left: two scratch trajectories on the same material (purple: top→down, strong force; green: left→right, strong force). Right: acceleration DFT magnitude of the synthesized signals for each direction (color frames match the trajectories). HNF produces distinct, direction-specific spectra—redistributing energy and revealing anisotropy—whereas the GACM baseline yields similar, low-pass like spectra for both directions, failing to model directional effects.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Qualitative results image -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop">
+        <h2 class="title">Some qualitative results</h2>
+          <div class="hero-body">
+            <img src="static/images/qualitative_3d-3.png" alt="Qualitative results image" loading="lazy"/>
+            <h2 class="subtitle has-text-justified" style="margin-top:0.75rem; position:relative; z-index:2; clear:both;">
+              <strong>Qualitative, action-conditioned touch in 3D scenes.</strong> From a rendered scene (NeRF/3DGS, left), we select contact locations (color-coded insets), render an RGB crop, and generate a co-registered haptic map. Each map is material-classified to route conditioning. Given an action description (e.g., scratch / rub with soft-hard or slow-fast profiles), HNF synthesizes the corresponding vibrotactile acceleration trace (right), producing distinct signals for different materials and actions at the same site.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+      <p>
+        This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+        You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
