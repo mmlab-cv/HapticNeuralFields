@@ -18,6 +18,8 @@ The repository includes a training example for the *Bubble Envelope* material in
 
 The `Digit` directory contains haptic maps classified as *Bubble Envelope* by the proposed classifier. The `1-RecordedData_Friction` directory contains the corresponding acceleration, position, and force measurements.
 
+Download the resnet encoder weights [here](https://drive.google.com/file/d/1vBiD4CkmROYLfINEs2Tmv9oUw66vshkd/view?usp=share_link).
+
 Run a short CPU smoke test with one material and one training epoch:
 
 ```bash
